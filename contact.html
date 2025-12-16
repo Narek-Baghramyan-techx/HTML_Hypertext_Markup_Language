@@ -3,25 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contacts</title>
 </head>
 <body>
     <h1>Contact's</h1>
     <br>
     <form>
             <div>
-                <label>First Name</label>
+                <label for="firstName">First Name</label>
                 <input type="text" name="firstName" placeholder="Enter first name">
             </div>
             <br>
             <div>
-                <label>last Name</label>
-                <input type="email" name="lastName" placeholder="Enter last name">
+                <label for="lastName">last Name</label>
+                <input type="text" name="lastName" placeholder="Enter last name">
             </div>
             <br>
             <div>
-                <label>Email</label>
-                <input type="text" name="email" placeholder="name@explain.com">
+                <label for="Email">Email</label>
+                <input type="email" name="email" placeholder="name@explain.com">
             </div>
             <br>
             <div>
@@ -30,7 +30,7 @@
             </div>
             <br>
             <div>
-                <label>Message</label>
+                <label for="Message">Message</label>
                 <textarea name="Message" placeholder="Any message"></textarea>
             </div>
             <br>
@@ -46,10 +46,10 @@
             <br>
             <fieldset>
                 <legend>Preferred Contact Method</legend>
-                <label>
+                <label for="contactEmail">
                     <input type="radio" name="contact-method" value="email" /> Email
                 </label>
-                <label>
+                <label for="contactPhone">
                     <input type="radio" name="contact-method" value="phone" /> Phone
                 </label>
             </fieldset>

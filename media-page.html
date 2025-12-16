@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Images</title>
+    <title>Media Page</title>
     <style type="text/css">
-        #main-header{
+        .main-header{
             text-align: center;
             background-color: rgb(161, 127, 255);
             color: aliceblue;
@@ -14,7 +14,7 @@
     </style>
 </head>
 <body>
-    <header id="main-header">
+    <header class="main-header">
         <h1>Beautiful images</h1>
     </header>
     <section>
@@ -22,15 +22,28 @@
         <h3>Red Panda</h3>
         <br>
         <a href="Image/redPanda.jpeg" target="_blank">
-            <img src="Image/redPanda.jpeg" alt="Please wait" width="500">
+            <img 
+                src="Image/redPanda.jpeg" 
+                alt="Please wait, red panda is eating" 
+                title="Red panda resting on a tree branch"
+                width="500">
         </a>
     </section>
+
     <section>
         <h3>Bear</h3>
         <br>
         <picture>
-            <source media="(max-width: 600px)" srcset="Image/bear.jpg" />
-            <source media="(min-width: 601px)" srcset="Image/bear.jpg" />
+            <source 
+                media="(max-width: 600px)" 
+                srcset="Image/bear.jpg"
+                img width="600px"    
+            />
+            <source 
+                media="(min-width: 601px)"
+                srcset="Image/bear.jpg"
+                img width="1500px"      
+            />
             <img src="Image/bear.jpg" alt="Responsive example image" />
         </picture>
     </section>
@@ -44,7 +57,15 @@
     <section>
         <h3>Best Funny Animal</h3>
         <br>
-        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=lUSkQ8-SBV4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/lUSkQ8-SBV4" 
+            title="Funny animal compilation video" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+        </iframe>
     </section>
     <section>
         <h2>Google Map</h2>
